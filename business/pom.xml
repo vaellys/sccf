@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>sccf-business</artifactId>
+	<groupId>com.combanc</groupId>
+	<packaging>pom</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<description>业务模块</description>
+
+	<parent>
+		<groupId>com.combanc</groupId>
+		<artifactId>sccf</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<modules>
+		<!-- business-commons 基础公共模块 -->
+		<module>sccf-business-commons</module>
+		<!-- business 业务相关模块服务 -->
+		<module>sccf-business-admin</module>
+		<module>sccf-business-demo</module>
+		<module>sccf-business-app</module>
+		<!--<module>sccf-business-sso</module>
+		<module>sccf-business-pay</module>
+		<module>sccf-business-wechat</module>-->
+	</modules>
+
+</project>

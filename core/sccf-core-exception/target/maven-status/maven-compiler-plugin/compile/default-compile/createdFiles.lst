@@ -1,0 +1,3 @@
+com\sccf\core\exception\CheckedException.class
+com\sccf\core\exception\DeniedException.class
+com\sccf\core\exception\ValidateCodeException.class

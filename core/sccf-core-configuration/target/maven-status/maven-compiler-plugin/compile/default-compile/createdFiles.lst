@@ -1,0 +1,5 @@
+com\sccf\core\configuration\FwUrlsConfiguration.class
+com\sccf\core\configuration\JwtConfiguration.class
+com\sccf\core\configuration\RedisUtils.class
+META-INF\spring-configuration-metadata.json
+com\sccf\core\configuration\RedisCacheConfiguration.class

@@ -1,0 +1,5 @@
+com\sccf\api\feign\exception\FeignErrorException.class
+com\sccf\api\feign\fallback\UserServiceFallbackImpl.class
+com\sccf\api\feign\fallback\DefaultFallbackImpl.class
+com\sccf\api\feign\dto\UserDto.class
+com\sccf\api\feign\IUserFeignService.class

@@ -1,0 +1,5 @@
+E:\IdeaProjects\sccf\api\sccf-system-api\src\main\java\com\sccf\api\feign\fallback\UserServiceFallbackImpl.java
+E:\IdeaProjects\sccf\api\sccf-system-api\src\main\java\com\sccf\api\feign\exception\FeignErrorException.java
+E:\IdeaProjects\sccf\api\sccf-system-api\src\main\java\com\sccf\api\feign\dto\UserDto.java
+E:\IdeaProjects\sccf\api\sccf-system-api\src\main\java\com\sccf\api\feign\IUserFeignService.java
+E:\IdeaProjects\sccf\api\sccf-system-api\src\main\java\com\sccf\api\feign\fallback\DefaultFallbackImpl.java

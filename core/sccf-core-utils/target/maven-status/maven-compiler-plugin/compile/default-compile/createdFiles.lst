@@ -1,0 +1,5 @@
+com\sccf\core\util\PublicHelper.class
+com\sccf\core\util\RandomHelper.class
+com\sccf\core\util\StringHelper.class
+com\sccf\core\util\WebUtils.class
+com\sccf\core\util\Crypt.class

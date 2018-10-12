@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>sccf-api</artifactId>
+    <groupId>com.combanc</groupId>
+	<packaging>pom</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+ 
+    <description>项目Feign api 管理</description>
+
+    <parent>
+		<groupId>com.combanc</groupId>
+		<artifactId>sccf</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+    
+    <modules>
+    	<!-- 用户系统管理 feign api -->
+    	<module>sccf-system-api</module>
+    </modules>
+    
+    <dependencies>
+    	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+			
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+</project>

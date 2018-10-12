@@ -1,0 +1,5 @@
+com\sccf\AdminApplication.class
+com\sccf\admin\controller\UserFeignController.class
+com\sccf\admin\service\ITSysUserService.class
+com\sccf\admin\entity\TSysUser.class
+com\sccf\admin\vo\UserVo.class

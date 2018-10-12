@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sccf.admin.mapper.TSysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.sccf.app.entity.TSysUser">
+        <id column="user_id" property="id" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="open_id" property="openId" />
+        <result column="mobile" property="mobile" />
+        <result column="pic_url" property="picUrl" />
+        <result column="statu" property="statu" />
+        <result column="dept_id" property="deptId" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id AS userId, username, password, open_id AS openId, mobile, pic_url AS picUrl, statu, dept_id AS deptId, create_time AS createTime, update_time AS updateTime
+    </sql>
+
+</mapper>

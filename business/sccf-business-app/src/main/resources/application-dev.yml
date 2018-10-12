@@ -1,0 +1,85 @@
+server:
+  port: 2002
+
+redis:
+  cache:
+    expiration: 3600
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: "jdbc:mysql://127.0.0.1:3306/fw-cloud?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false"
+    username: root
+    password: christmas
+    druid:
+      initial-size: 10
+      max-active: 100
+      min-idle: 10
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        #login-username: monitor
+        #login-password: monitor
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: true
+        wall:
+          config:
+            multi-statement-allow: true
+  mvc:
+    view:
+# 页面默认前缀目录
+      prefix: /WEB-INF/pages/
+# 响应页面默认后缀
+      suffix: .jsp
+
+#mybaits-plus配置，修改主键类型，mapper.xml、type 别名等
+mybatis-plus:
+  # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
+  # 如果是放在resource目录 classpath:/mapper/*Mapper.xml
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.sccf.*.entity
+  #扫描通用枚举
+  typeEnumsPackage: com.sccf.common.enums
+  global-config:
+    #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+    id-type: 3
+    #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+    field-strategy: 1
+    #驼峰下划线转换
+    db-column-underline: true
+    #刷新mapper 调试神器
+    refresh-mapper: true
+    #数据库大写下划线转换
+    #capital-mode: true
+    #逻辑删除配置
+    logic-delete-value: 9
+    logic-not-delete-value: 1
+    sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+    #自定义填充策略接口实现
+    meta-object-handler: com.sccf.common.entity.handler.EntityMetaObjectHandler
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+
+sccf:
+  auth:
+    client-id: sccf
+    client-secret: 123456
+
+
+
+logging:
+  config: classpath:logback.xml
